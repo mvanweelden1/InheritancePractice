@@ -16,6 +16,10 @@ public class Startup {
         
         System.out.println(salariedEmployee);
         
+        SalaryPlusBonusEmployee bonusEmployee = new SalaryPlusBonusEmployee(100, "Mary", "Anderson", 2262, 50000);
+        
+        System.out.println(bonusEmployee);
+        
     }
     
 }
