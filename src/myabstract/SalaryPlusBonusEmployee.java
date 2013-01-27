@@ -6,4 +6,8 @@ package myabstract;
  */
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
     
+    private double bonusPay;
+
+   
+    
 }
