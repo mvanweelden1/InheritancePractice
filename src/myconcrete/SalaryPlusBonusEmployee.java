@@ -33,8 +33,8 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
     public String toString() {
         String str = super.toString();
         DecimalFormat formatter = new DecimalFormat("#0.00");
-        return "SalaryPlusBonusEmployee[" + str + "Bonus Pay: $" + bonusPay 
-                + "Weekly Pay w/ Bonus: $" + formatter.format(getWeeklyPay())+ ']';
+        return "SalaryPlusBonusEmployee[" + str + "Bonus Pay: $" 
+                + formatter.format(bonusPay) + ']';
     }
     
     

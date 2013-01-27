@@ -20,7 +20,7 @@ public class Startup {
         
         System.out.println(salariedEmployee);
         
-        SalaryPlusBonusEmployee bonusEmployee = new SalaryPlusBonusEmployee(5000, 50000, "Mary", "Anderson", 2262);
+        SalaryPlusBonusEmployee bonusEmployee = new SalaryPlusBonusEmployee(100, 50000, "Mary", "Anderson", 2262);
         
         System.out.println(bonusEmployee);
         
