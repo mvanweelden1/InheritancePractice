@@ -1,5 +1,7 @@
 package myconcrete;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author Mark Van Weelden
@@ -41,9 +43,11 @@ public class HourlyEmployee extends Employee {
     @Override
     public String toString() {
         String str = super.toString();
+        DecimalFormat formatter = new DecimalFormat("#0.00");
         
-        return "HourlyEmployee{" + str + "payRate=" + payRate + ", hoursWorked=" 
-                + hoursWorked + '}';
+        return "HourlyEmployee[" + str + "Pay Rate: " + formatter.format(payRate) 
+                + ", Hours Worked: " + hoursWorked + ", Gross Pay: $" 
+                + formatter.format(getGrossPay()) + ']';
     }
     
     

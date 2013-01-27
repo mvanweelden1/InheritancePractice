@@ -43,8 +43,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" + "firstName=" + firstName + ", lastName=" +
-                lastName + ", employeeNumber=" + employeeNumber + '}';
+        return "Employee[" + "First Name: " + firstName + ", Last Name: " +
+                lastName + ", Employee Number: " + employeeNumber + ']';
     }
     
     

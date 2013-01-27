@@ -1,5 +1,7 @@
 package myconcrete;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author Mark Van Weelden
@@ -28,5 +30,17 @@ public class SalariedEmployee extends Employee{
         weeklyPay = yearlySalary/52;
         return weeklyPay;
     }
+
+    @Override
+    public String toString() {
+        String str = super.toString();
+        DecimalFormat formatter = new DecimalFormat("#0.00");
+         
+        return "SalariedEmployee[" + str + "Yearly Salary: $" 
+                + formatter.format(yearlySalary) + ", Weekly Pay: $" 
+                + formatter.format(getWeeklyPay()) + ']';
+    }
+    
+    
     
 }
